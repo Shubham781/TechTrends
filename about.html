@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TechTrend Laptops</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Custom styles for better responsiveness */
+        .section-padding {
+            padding: 3rem 0;
+        }
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 2rem 0;
+            }
+        }
+        .img-container {
+            max-height: 400px;
+            overflow: hidden;
+        }
+        .img-container img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">TechTrend Laptops</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="cartIcon" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="bi bi-cart"></i> <span id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cartItems" class="list-group">
+                        <!-- Cart items will be dynamically added here -->
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container my-4 my-md-5">
+        <h1 class="text-center mb-4 mb-md-5">About TechTrend Laptops</h1>
+        
+        <div class="row align-items-center section-padding">
+            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                <div class="p-3 p-md-4">
+                    <h2 class="mb-3 mb-md-4">Pioneering the Future of Mobile Computing</h2>
+                    <p class="lead">At TechTrend Laptops, we're not just selling computers – we're crafting experiences. Founded in 2020 by a group of tech enthusiasts, our mission is to bring the latest and greatest in laptop technology to forward-thinking individuals who demand the best.</p>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="img-container rounded shadow">
+                    <img src="ourteam.jpg" alt="TechTrend Team" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <div class="row section-padding">
+            <div class="col-12" data-aos="fade-up">
+                <div class="bg-light p-3 p-md-4 rounded">
+                    <h2 class="mb-3 mb-md-4">Our Philosophy</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><strong>Innovation:</strong> We're always one step ahead, offering the most advanced laptops on the market.</li>
+                        <li class="mb-3"><strong>Quality:</strong> We partner with top manufacturers to ensure every device meets our exacting standards.</li>
+                        <li class="mb-3"><strong>Customer-First:</strong> Your satisfaction is our top priority, from purchase to long-term use.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row section-padding">
+            <div class="col-12" data-aos="fade-up">
+                <div class="bg-info text-white p-3 p-md-4 rounded">
+                    <h2 class="mb-3 mb-md-4">Our Commitment to Sustainability</h2>
+                    <p class="lead mb-0">We believe in responsible tech. That's why we use eco-friendly packaging and offer a recycling program for old devices.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center section-padding" data-aos="fade-up">
+            <h2 class="mb-3 mb-md-4">Join the TechTrend Revolution</h2>
+            <p class="lead mb-4">Experience computing like never before.</p>
+            <a href="products.html" class="btn btn-primary btn-lg">Shop Now</a>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 TechTrend Laptops. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>

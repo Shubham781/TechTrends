@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - TechTrend Laptops</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <style>
+        .card {
+            width: 100%;
+            height: 100%;
+            max-width: 350px; /* Increased max-width */
+            margin: 0 auto;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card img {
+            max-height: 200px;
+            object-fit: cover;
+        }
+        .newsletter-section, .why-choose-us, .testimonials {
+            background-color: #f7f7f7;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .why-choose-us h2, .testimonials h2 {
+            margin-bottom: 20px;
+        }
+        .newsletter-section form, .testimonials .row {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">TechTrend Laptops</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="cartIcon" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="bi bi-cart"></i> <span id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cartItems" class="list-group">
+                        <!-- Cart items will be dynamically added here -->
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-5">Our Laptops</h1>
+        
+        <div class="row justify-content-center">
+            <!-- Intel Laptops -->
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+                <div class="card">
+                    <img src="./download.jfif" class="card-img-top" alt="Intel Laptop 1">
+                    <div class="card-body">
+                        <h5 class="card-title">TechPro X1 (Intel)</h5>
+                        <p class="card-text">Powerful Intel-based laptop for professionals</p>
+                        <a href="product-intel-x1.html" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card">
+                    <img src="./617Ykb5YvLL._AC_UY218_.jpg" class="card-img-top" alt="Intel Laptop 2">
+                    <div class="card-body">
+                        <h5 class="card-title">TechPro X2 (Intel)</h5>
+                        <p class="card-text">High-performance Intel laptop for gamers</p>
+                        <a href="product-intel-x2.html" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AMD Laptops -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card">
+                    <img src="./61EIqit4e1L._AC_UY218_.jpg" class="card-img-top" alt="AMD Laptop 1">
+                    <div class="card-body">
+                        <h5 class="card-title">TechPro A1 (AMD)</h5>
+                        <p class="card-text">High-performance AMD-powered laptop</p>
+                        <a href="product-amd-a1.html" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+                <div class="card">
+                    <img src="./51B-iAjx5zL._AC_UY218_.jpg" class="card-img-top" alt="AMD Laptop 2">
+                    <div class="card-body">
+                        <h5 class="card-title">TechPro A2 (AMD)</h5>
+                        <p class="card-text">Powerful AMD laptop for content creators</p>
+                        <a href="product-amd-a2.html" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mac Laptops -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card">
+                    <img src="./mac.jpg" class="card-img-top" alt="MacBook Pro">
+                    <div class="card-body">
+                        <h5 class="card-title">MacBook Pro</h5>
+                        <p class="card-text">Sleek and powerful MacBook for creatives</p>
+                        <a href="product-macbook-pro.html" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card">
+                    <img src="./71eXNIDUGjL._AC_UY218_.jpg" class="card-img-top" alt="MacBook Air">
+                    <div class="card-body">
+                        <h5 class="card-title">MacBook Air</h5>
+                        <p class="card-text">Ultra-lightweight MacBook for on-the-go professionals</p>
+                        <a href="product-macbook-air.html" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <div class="why-choose-us" data-aos="fade-right" data-aos-duration="1000">
+        <h2>Why Choose TechTrend Laptops?</h2>
+        <p>At TechTrend, we provide the best laptops for every need. Whether you are a professional, a gamer, or a creative, we have the perfect laptop for you. Our products are known for their reliability, cutting-edge technology, and excellent customer service. We offer competitive prices and a wide range of options to choose from.</p>
+        <p>Join thousands of satisfied customers and experience the TechTrend difference today!</p>
+    </div>
+
+    <!-- Customer Testimonials Section -->
+    <div class="testimonials" data-aos="zoom-in" data-aos-duration="1200">
+        <h2>Customer Testimonials</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <blockquote class="blockquote">
+                    <p>"I bought the TechPro X2 and it's been amazing for gaming. The performance is top-notch and the build quality is excellent!"</p>
+                    <footer class="blockquote-footer">John Doe</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-6">
+                <blockquote class="blockquote">
+                    <p>"The MacBook Air I purchased from TechTrend has been perfect for my on-the-go lifestyle. Highly recommend!"</p>
+                    <footer class="blockquote-footer">Jane Smith</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <div class="newsletter-section" data-aos="fade-up" data-aos-duration="800">
+        <h2>Stay Updated with Our Latest Laptops</h2>
+        <p>Subscribe to our newsletter to receive updates on new products, exclusive offers, and more!</p>
+        <form action="#" method="post">
+            <div class="input-group">
+                <input type="email" class="form-control" placeholder="Enter your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 TechTrend Laptops. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

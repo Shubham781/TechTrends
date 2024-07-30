@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPro X1 (Intel) - TechTrend Laptops</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .product-img {
+            max-width: 530px;
+            height: 415px;
+        }
+        .feature-list, .customer-review-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .feature-list li::before, .customer-review-list li::before {
+            content: "\2022";
+            color: #007bff;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+        .review-card {
+            background-color: #f8f9fa;
+            border: none;
+        }
+        .highlight {
+            color: #ff5733; /* Highlight color for emphasis */
+        }
+        .custom-hr {
+            border: 1px solid #007bff;
+            margin: 20px 0;
+        }
+        .custom-vr {
+            border-left: 2px solid #007bff;
+            height: 100%;
+            margin: 0 15px;
+        }
+        .section-bg {
+            background-color: #f0f8ff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">TechTrend Laptops</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="cartIcon" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="bi bi-cart"></i> <span id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cartItems" class="list-group">
+                        <!-- Cart items will be dynamically added here -->
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-5" data-aos="fade-right">
+                <img src="./61EIqit4e1L._AC_UY218_.jpg" alt="TechPro A1 (AMD)" class="product-img img-fluid rounded">
+            </div>
+            <div class="col-md-1 custom-vr d-none d-md-block"></div>
+            <div class="col-md-5" data-aos="fade-left">
+                <h1 class="highlight">TechPro A1 (AMD)</h1>
+                <p class="lead">$1,199.99</p>
+                <p>High-performance AMD-powered laptop</p>
+                <h3>Key Features:</h3>
+                <ul class="feature-list">
+                    <li>AMD Ryzen 9 5900HX processor</li>
+                    <li>16GB DDR4 RAM, 1TB NVMe SSD</li>
+                    <li>15.6" FHD 144Hz IPS display</li>
+                    <li>AMD Radeon RX 6800M graphics</li>
+                    <li>1.9 kg lightweight design</li>
+                    <li>Up to 10 hours of battery life</li>
+                    <li>USB 4, Wi-Fi 6, and Bluetooth 5.2</li>
+                </ul>
+                <button class="btn btn-primary btn-lg" onclick="addToCart('TechPro A1 (AMD)', 1199.99)">Add to Cart</button>
+            </div>
+        </div>
+
+        <hr class="custom-hr">
+
+        <div class="row mt-5 section-bg">
+            <div class="col-12" data-aos="fade-up">
+                <h2 class="highlight">Product Description</h2>
+                <p>The TechPro A1 is a powerhouse AMD-based laptop that delivers exceptional performance for both work and play. Featuring the latest AMD Ryzen 9 5900HX processor and Radeon RX 6800M graphics, it can handle demanding tasks and AAA games with ease.</p>
+                <p>The 15.6" FHD display with a 144Hz refresh rate ensures smooth visuals for gaming and video editing. With 16GB of DDR4 RAM and a spacious 1TB NVMe SSD, multitasking and file access are lightning-fast.</p>
+                <p>Despite its powerful components, the TechPro A1 maintains a lightweight design at just 1.9 kg, making it perfect for on-the-go use. The long battery life ensures you can work or play for extended periods without needing to recharge.</p>
+            </div>
+        </div>
+
+        <hr class="custom-hr">
+
+        <div class="row mt-5 section-bg">
+            <div class="col-12" data-aos="flip-left">
+                <h2 class="highlight">Customer Reviews</h2>
+                <div class="card-deck">
+                    <div class="card review-card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Emily Chen</h5>
+                            <p class="card-text">"I'm amazed by the performance of the TechPro A1. As a video editor, the AMD processor handles my 4K footage with ease. The 144Hz display is a joy to work with, and the battery life is impressive for such a powerful machine."</p>
+                        </div>
+                    </div>
+                    <div class="card review-card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">David Wilson</h5>
+                            <p class="card-text">"As a student who loves gaming, the TechPro A1 is the perfect balance of performance and portability. It handles all my coursework and gaming sessions without breaking a sweat. Highly recommended!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 TechTrend Laptops. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        let cart = [];
+    
+        function addToCart(productName, price) {
+            cart.push({name: productName, price: price});
+            updateCartCount();
+            updateCartModal();
+            alert(productName + " added to cart!");
+        }
+    
+        function updateCartCount() {
+            document.getElementById('cartCount').innerText = cart.length;
+        }
+    
+        function updateCartModal() {
+            let cartItemsElement = document.getElementById('cartItems');
+            cartItemsElement.innerHTML = '';
+            let total = 0;
+            cart.forEach(item => {
+                let li = document.createElement('li');
+                li.className = 'list-group-item d-flex justify-content-between align-items-center';
+                li.innerHTML = `
+                    ${item.name}
+                    <span class="badge bg-primary rounded-pill">$${item.price.toFixed(2)}</span>
+                `;
+                cartItemsElement.appendChild(li);
+                total += item.price;
+            });
+            let totalLi = document.createElement('li');
+            totalLi.className = 'list-group-item d-flex justify-content-between align-items-center';
+            totalLi.innerHTML = `
+                <strong>Total</strong>
+                <span class="badge bg-success rounded-pill">$${total.toFixed(2)}</span>
+            `;
+            cartItemsElement.appendChild(totalLi);
+        }
+    </script>
+</body>
+</html>
