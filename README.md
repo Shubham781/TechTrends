@@ -27,7 +27,7 @@ Installation
 
 1.  Clone the repository:
     
-        git clone https://github.com/yourusername/techtrends.git
+        git clone https://github.com/Shubham781/TechTrends.git
     
 2.  Navigate to the project directory:
     
