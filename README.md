@@ -1,7 +1,7 @@
 TechTrends
 ==========
 
-TechTrends is a responsive e-commerce website that specializes in selling laptops. The site offers a user-friendly interface for browsing and purchasing high-quality laptops.
+TechTrends is a responsive e-commerce website that specializes in selling laptops. The site offers a user-friendly interface for browsing and purchasing high-quality laptops. Site is live at https://shubham781.github.io/TechTrends/
 
 Features
 --------
@@ -45,7 +45,3 @@ Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-License
--------
-
-This project is licensed under the [MIT License](LICENSE).
