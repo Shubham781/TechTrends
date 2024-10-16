@@ -1,7 +1,7 @@
 TechTrends
 ==========
 
-TechTrends is a responsive e-commerce website that specializes in selling laptops. The site offers a user-friendly interface for browsing and purchasing high-quality laptops. Site is live at https://shubham781.github.io/TechTrends/
+TechTrends is a responsive e-commerce website that specializes in selling laptops. The site offers a user-friendly interface for browsing and purchasing high-quality laptops. Site is live at https://shubham781.github.io/TechTrends/ and sucessfully hosted at AWS http://website-techtrends.s3-website.ap-south-1.amazonaws.com
 
 Features
 --------
